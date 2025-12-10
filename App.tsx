@@ -6,7 +6,7 @@ import Envelope from './components/Envelope';
 
 const App: React.FC = () => {
   // --- State ---
-  const [heroImage, setHeroImage] = useState<string | null>("/images/hero-main.png");
+  const [heroImage, setHeroImage] = useState<string | null>("/-/images/hero-main.png");
   const [bgmSrc, setBgmSrc] = useState<string | null>("/media/birthday-bgm.mp4");
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLetterOpen, setIsLetterOpen] = useState(false);
@@ -16,17 +16,19 @@ const App: React.FC = () => {
   // Background Decorations State (3 slots)
   // Use local placeholder images that will be available under dist/images after build.
   const [bgDecors, setBgDecors] = useState<string[]>([
-    "/images/bg-decor-1.png",
-    "/images/bg-decor-2.png",
-    "/images/bg-decor-3.png"
-  ]);
+  "/-/images/bg-decor-1.png",
+  "/-/images/bg-decor-2.png",
+  "/-/images/bg-decor-3.png"
+]);
+
 
   // New Sections State
-  const [polaroidPhotos, setPolaroidPhotos] = useState<string[]>([
-    "/images/polaroid-1.png", 
-    "/images/polaroid-2.png", 
-    "/images/polaroid-3.png"
-  ]);
+ const [polaroidPhotos, setPolaroidPhotos] = useState<string[]>([
+  "/-/images/polaroid-1.png",
+  "/-/images/polaroid-2.png",
+  "/-/images/polaroid-3.png"
+]);
+
 
   const [stickyNotes, setStickyNotes] = useState<string[]>([
     " 好漂亮好温柔好有活力的女明星来的💛",
