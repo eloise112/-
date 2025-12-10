@@ -12,8 +12,8 @@
     <style>
       body {
         font-family: 'Quicksand', sans-serif;
-        background-color: #fffbeb; /* Amber 50 */
-        color: #78350f; /* Amber 900 */
+        background-color: #fffbeb;
+        color: #78350f;
         overflow-x: hidden;
       }
       ::-webkit-scrollbar {
@@ -27,8 +27,6 @@
         border-radius: 9999px;
         border: 3px solid #fffbeb; 
       }
-      
-      /* Animations */
       @keyframes float {
         0%, 100% { transform: translateY(0px) rotate(0deg); }
         50% { transform: translateY(-10px) rotate(1deg); }
@@ -36,7 +34,6 @@
       .animate-float {
         animation: float 5s ease-in-out infinite;
       }
-
       @keyframes spin-slow {
         from { transform: rotate(0deg); }
         to { transform: rotate(360deg); }
@@ -44,7 +41,6 @@
       .animate-spin-slow {
         animation: spin-slow 20s linear infinite;
       }
-
       @keyframes wiggle {
         0%, 100% { transform: rotate(-1deg); }
         50% { transform: rotate(1deg); }
@@ -52,7 +48,6 @@
       .animate-wiggle {
         animation: wiggle 2s ease-in-out infinite;
       }
-
       @keyframes fadeInUp {
         from {
           opacity: 0;
@@ -66,21 +61,17 @@
       .animate-fadeInUp {
         animation: fadeInUp 0.8s ease-out forwards;
       }
-
-      /* Cute Stationery Texture (Dot Grid) */
       .paper-texture {
         background-color: #ffffff;
         background-image: radial-gradient(#fbbf24 1.5px, transparent 1.5px);
         background-size: 24px 24px;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
       }
-
-      /* Washi Tape Effect */
       .washi-tape {
         position: absolute;
         width: 100px;
         height: 25px;
-        background-color: rgba(252, 211, 77, 0.7); /* Amber 300 */
+        background-color: rgba(252, 211, 77, 0.7);
         box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         z-index: 20;
         transform: rotate(-2deg);
@@ -98,10 +89,10 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="index.css">
 </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+  <script type="module" src="index.tsx"></script>
 </body>
 </html>
